@@ -34,5 +34,5 @@ namespace CTECData {
         bool isEdge(int source, int target);
         std::set<int> neighbors(int vertex) const;
     };
-    
+}
 #endif /* CTECGraph_hpp */
