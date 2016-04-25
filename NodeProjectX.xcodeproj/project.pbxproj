@@ -16,6 +16,7 @@
 		BE29046B1CBC313000F52F86 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2904601CBC313000F52F86 /* Timer.cpp */; };
 		BE29046C1CBC313000F52F86 /* TreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2904621CBC313000F52F86 /* TreeNode.cpp */; };
 		BE29046D1CBC315700F52F86 /* NodeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2904521CBC313000F52F86 /* NodeController.cpp */; };
+		BE880A521CCE8FD500017DA7 /* CTECGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE880A501CCE8FD500017DA7 /* CTECGraph.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		BE2904611CBC313000F52F86 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 		BE2904621CBC313000F52F86 /* TreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeNode.cpp; sourceTree = "<group>"; };
 		BE2904631CBC313000F52F86 /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		BE880A501CCE8FD500017DA7 /* CTECGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTECGraph.cpp; sourceTree = "<group>"; };
+		BE880A511CCE8FD500017DA7 /* CTECGraph.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CTECGraph.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				BE2904611CBC313000F52F86 /* Timer.h */,
 				BE2904621CBC313000F52F86 /* TreeNode.cpp */,
 				BE2904631CBC313000F52F86 /* TreeNode.h */,
+				BE880A501CCE8FD500017DA7 /* CTECGraph.cpp */,
+				BE880A511CCE8FD500017DA7 /* CTECGraph.hpp */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				BE29046D1CBC315700F52F86 /* NodeController.cpp in Sources */,
 				BE2904651CBC313000F52F86 /* NodeRunner.cpp in Sources */,
 				BE2904681CBC313000F52F86 /* CTECBinaryTree.cpp in Sources */,
+				BE880A521CCE8FD500017DA7 /* CTECGraph.cpp in Sources */,
 				BE2904661CBC313000F52F86 /* ArrayNode.cpp in Sources */,
 				BE2904691CBC313000F52F86 /* CTECList.cpp in Sources */,
 				BE29046B1CBC313000F52F86 /* Timer.cpp in Sources */,
@@ -293,6 +299,7 @@
 				BE2904501CBC310900F52F86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
