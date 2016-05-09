@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0F682B1CE1060E00488C2B /* CTECHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE0F68291CE1060E00488C2B /* CTECHashTable.cpp */; };
+		BE0F682E1CE106A700488C2B /* HashNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE0F682C1CE106A700488C2B /* HashNode.cpp */; };
 		BE2904651CBC313000F52F86 /* NodeRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2904541CBC313000F52F86 /* NodeRunner.cpp */; };
 		BE2904661CBC313000F52F86 /* ArrayNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2904561CBC313000F52F86 /* ArrayNode.cpp */; };
 		BE2904671CBC313000F52F86 /* CTECArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2904581CBC313000F52F86 /* CTECArray.cpp */; };
@@ -32,6 +34,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE0F68291CE1060E00488C2B /* CTECHashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTECHashTable.cpp; sourceTree = "<group>"; };
+		BE0F682A1CE1060E00488C2B /* CTECHashTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CTECHashTable.hpp; sourceTree = "<group>"; };
+		BE0F682C1CE106A700488C2B /* HashNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashNode.cpp; sourceTree = "<group>"; };
+		BE0F682D1CE106A700488C2B /* HashNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
 		BE2904471CBC310900F52F86 /* NodeProjectX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NodeProjectX; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2904521CBC313000F52F86 /* NodeController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NodeController.cpp; sourceTree = "<group>"; };
 		BE2904531CBC313000F52F86 /* NodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeController.h; sourceTree = "<group>"; };
@@ -111,6 +117,10 @@
 				BE2904631CBC313000F52F86 /* TreeNode.h */,
 				BE880A501CCE8FD500017DA7 /* CTECGraph.cpp */,
 				BE880A511CCE8FD500017DA7 /* CTECGraph.hpp */,
+				BE0F68291CE1060E00488C2B /* CTECHashTable.cpp */,
+				BE0F682A1CE1060E00488C2B /* CTECHashTable.hpp */,
+				BE0F682C1CE106A700488C2B /* HashNode.cpp */,
+				BE0F682D1CE106A700488C2B /* HashNode.hpp */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,7 +190,9 @@
 				BE29046B1CBC313000F52F86 /* Timer.cpp in Sources */,
 				BE29046C1CBC313000F52F86 /* TreeNode.cpp in Sources */,
 				BE2904671CBC313000F52F86 /* CTECArray.cpp in Sources */,
+				BE0F682B1CE1060E00488C2B /* CTECHashTable.cpp in Sources */,
 				BE29046A1CBC313000F52F86 /* Node.cpp in Sources */,
+				BE0F682E1CE106A700488C2B /* HashNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
