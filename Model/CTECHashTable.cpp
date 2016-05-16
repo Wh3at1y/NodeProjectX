@@ -57,6 +57,38 @@ if((chainedSize/chainedCapacity) >= efficiencyPercentage)
 }
 
 template <class Type>
+void CTECHashTable<Type> :: updateChainedCapacity()
+{
+    int updatedChainedCapacity = getNextPrime();
+    int oldChainedCapacity = chainedCapacity;
+    chainedCapacity = updatedChainedCapacity;
+    
+    CTECList<HashNode<Type>> * largerCHainedStorage = new CTECList<HashNode<Type>>[updatedChainedCapacity];
+    
+    for(int index = 0; index < oldChainedCapacity; index++)
+    {
+        if(chainedStorage[index] != nullptr)
+        {
+            CTECList<HashNode<Type>> temp = chainedStorage[index];
+            for(int innerIndex = 0; innerIndex < temp.getSize(); innerIndex++)
+            {
+                int updatedChainedPosition = findPosition(temp.getFromIndex(innerIndex));
+                if(largerCHainedStorage[updatedChainedCapacity] == nullptr)
+                {
+                    CTECList<HashNode<Type>> insertList;
+                    insertList.addEnd(temp.getFromIndex(innerIndex));
+                    largerCHainedStorage[updatedChainedPosition] = insertList;
+                }
+                else
+                {
+                    largerCHainedStorage[updatedChainedPosition].addEnd(temp.getFromIndex(innerIndex));
+                }
+            }
+        }
+    }
+}
+
+template <class Type>
 void CTECHashTable<Type> :: add(HashNode<Type> currentNode)
 {
     if (!constains(currentNode)) 
