@@ -20,6 +20,12 @@ namespace CTECData
         balanced = true;
     }
     
+    template <class Type>
+    CTECBinaryTree<Type> :: ~CTECBinaryTree<Type>()
+    {
+        
+    }
+    
     template<class Type>
     int CTECBinaryTree<Type> :: getSize()
     {

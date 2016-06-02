@@ -12,6 +12,8 @@
 #include "../Model/ArrayNode.cpp"
 #include "../Model/CTECArray.cpp"
 #include "../Model/CTECList.cpp"
+#include "../Model/CTECGraph.cpp"
+#include "../Model/CTECBinaryTree.cpp"
 
 using namespace std;
 
@@ -36,6 +38,8 @@ class NodeController
 		NodeController();
 		virtual ~NodeController();
 		void start();
+    void tryGraphs();
+    void tryTrees();
 };
 
 #endif /* CONTROLLER_NODECONTROLLER_H_ */

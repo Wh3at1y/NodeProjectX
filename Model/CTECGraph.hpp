@@ -20,6 +20,7 @@ namespace CTECData {
         bool adjacencyMatrix [MAXIMUM] [MAXIMUM];
         Type labels [MAXIMUM];
         int manyVertices;
+        void depthFirstTraversal(CTECGraph<Type> graph, int vertex, bool markedVertecies[]);
         
     public:
         CTECGraph();
@@ -30,9 +31,12 @@ namespace CTECData {
         void removeEdge(int source, int target);
         Type& operator [] (int vertex);
         Type operator [] (int vertex) const;
-        int size();
+        int size() const;
         bool isEdge(int source, int target) const;
         std::set<int> neighbors(int vertex) const;
+        
+        void depthFirstTraversal(CTECGraph<Type> graph, int vertex);
+        void breadthFirstTraversal(CTECGraph<Type> graph, int vertex);
     };
 }
 #endif /* CTECGraph_hpp */

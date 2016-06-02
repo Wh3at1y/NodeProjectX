@@ -10,6 +10,7 @@
 #include <iostream>
 
 using namespace std;
+using namespace CTECData;
 
 NodeController::NodeController()
 {
@@ -23,7 +24,7 @@ NodeController::~NodeController()
 
 void NodeController::start()
 {
-	doMergesort();
+    tryGraphs();
 }
 
 void NodeController::sortData()
@@ -91,6 +92,34 @@ void NodeController::doMergesort()
 	delete[] mergeData;
 }
 
+void NodeController::tryGraphs()
+{
+    CTECGraph<int> testGraph;
+    testGraph.addVertex(4);
+    testGraph.addVertex(13);
+    testGraph.addVertex(2);
+    testGraph.addVertex(5);
+    testGraph.addVertex(8);
+    testGraph.addVertex(21);
+    testGraph.addVertex(43);
+    testGraph.addVertex(1);
+    testGraph.addVertex(99);
+    testGraph.addVertex(10);
+    testGraph.addEdge(0,1);
+    testGraph.addEdge(1,2);
+    testGraph.addEdge(2,3);
+    testGraph.addEdge(3,4);
+    testGraph.addEdge(4,5);
+    testGraph.addEdge(5,6);
+    testGraph.addEdge(6,7);
+    testGraph.addEdge(7,8);
+    testGraph.addEdge(8,9);
+    
+    
+    testGraph.breadthFirstTraversal(testGraph,0);
+    testGraph.depthFirstTraversal(testGraph,0);
+    
+}
 void NodeController::mergesort(int data[], int size)
 {
 	int sizeOne;
@@ -147,4 +176,27 @@ void NodeController::merge(int data[], int sizeOne, int sizeTwo)
 	}
 	delete[] temp;
 
+}
+
+void NodeController::tryTrees()
+{
+    
+    CTECBinaryTree<int> testTree;
+    cout<<"this is pre removal" << endl;
+    
+    testTree.insert(1);
+    testTree.insert(5);
+    testTree.insert(7);
+    testTree.insert(3);
+    testTree.insert(2);
+    testTree.insert(8);
+    testTree.insert(12);
+    testTree.inorderTraversal(testTree.getRoot());
+    
+    
+    testTree.remove(1);
+    cout<<"this is post removal" << endl;
+    testTree.inorderTraversal(testTree.getRoot());
+    
+    
 }
